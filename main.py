@@ -1,7 +1,7 @@
-def clean(x: list):
-    x = remove_excluded(x)
-    return x
+def clean(lst: list):
+    lst = remove_excluded(lst)
+    return lst
 
-def remove_excluded(x):
+def remove_excluded(lst):
     excluded = ["banana", "orange"]
-    return [obj for obj in x if obj not in excluded]
+    return [obj for obj in lst if obj not in excluded]
